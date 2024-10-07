@@ -6,6 +6,11 @@ terraform {
     }
   }
 }
+
+provider "azurerm" {
+  features {}
+
+}
 resource "azurerm_resource_group" "prod1" {
  
   name     = "prod11"
